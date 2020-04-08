@@ -6,9 +6,15 @@ function setup() {
 }
 
 function draw() {
-  fill(0);
-  for (let x = 10; x < width; x = x + 30) {
-    ellipse(x, height / 2, 10, 10);
+  background(255);
+  noFill(0);
+  for (let x = 50; x <= width - 50; x += 20) {
+    for (let y = 50; y <= height - 50; y += 20) {
+      ellipse(x, y, 20, 20);
+      ellipse(x, y, 20, 20);
+      ellipse(x, y, 20, 20);
+
+    }
   }
 }
 
